@@ -134,7 +134,7 @@ import (
     "project/email"
 )
 
-// Понятно: работаем с пользователями, платежами, email(сразу легче читается да?)
+// Понятно: работаем с пользователями, платежами, email(сразу легче читается, да?)
 func main() {
     u := user.User{...}
     svc := user.NewService(...)
@@ -161,7 +161,7 @@ internal/
   payment/           # Bounded Context: платежи
     payment.go
     processor.go
-    sbp.go        # Интеграция с СБП
+    sbp.go           # Интеграция с СБП
 
   notification/      # Bounded Context: уведомления
     notification.go
@@ -624,7 +624,7 @@ type Repository struct { ... }    // user.Repository
 
 ---
 
-### 5. Используйте domain language(термины из предметной области)
+### 5. Используйте domain language (термины из предметной области)
 
 ```go
 // Правильно: термины из предметной области
